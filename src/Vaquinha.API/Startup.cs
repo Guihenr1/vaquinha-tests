@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Vaquinha.API.Extensions;
 using Vaquinha.Repository.Context;
 
 namespace Vaquinha.API {
@@ -25,6 +26,11 @@ namespace Vaquinha.API {
 
             services.AddControllers();
 
+            services
+                .AddIocConfiguration(Configuration)
+                .AddAutoMapper(Configuration)
+                .AddCustomConfiguration(Configuration);
+
             services.AddSwaggerGen(c =>
             {
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -39,19 +45,16 @@ namespace Vaquinha.API {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseSwagger();
-
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api de testes");
-                c.RoutePrefix = string.Empty;
-            });
-
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseSwagger();
+            app.UseHttpsRedirection();
+
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api de testes");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllers();

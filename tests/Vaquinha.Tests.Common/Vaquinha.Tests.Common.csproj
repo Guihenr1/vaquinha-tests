@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  
+    <ItemGroup>
+    <PackageReference Include="Bogus" Version="29.0.2" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Vaquinha.API\Vaquinha.API.csproj" />
+    <ProjectReference Include="..\..\src\Vaquinha.Domain\Vaquinha.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Vaquinha.Repository\Vaquinha.Repository.csproj" />
+    <ProjectReference Include="..\..\src\Vaquinha.Service\Vaquinha.Service.csproj" />
+  </ItemGroup>
+
+</Project>

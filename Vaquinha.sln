@@ -5,13 +5,19 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E2A7C285-C346-4C25-A60E-9336FA1C7885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaquinha.API", "src\Vaquinha.API\Vaquinha.API.csproj", "{4C6ABF29-1EC9-4713-8344-A01B57E21D7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vaquinha.API", "src\Vaquinha.API\Vaquinha.API.csproj", "{4C6ABF29-1EC9-4713-8344-A01B57E21D7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaquinha.Domain", "src\Vaquinha.Domain\Vaquinha.Domain.csproj", "{9F443E0E-3F81-4D0C-879C-5E36BDDD57F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vaquinha.Domain", "src\Vaquinha.Domain\Vaquinha.Domain.csproj", "{9F443E0E-3F81-4D0C-879C-5E36BDDD57F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaquinha.Repository", "src\Vaquinha.Repository\Vaquinha.Repository.csproj", "{C1395287-01C6-4A26-9086-D5D3998C790F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vaquinha.Repository", "src\Vaquinha.Repository\Vaquinha.Repository.csproj", "{C1395287-01C6-4A26-9086-D5D3998C790F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaquinha.Service", "src\Vaquinha.Service\Vaquinha.Service.csproj", "{EE661B07-85A9-4146-BA12-023F8D1773C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vaquinha.Service", "src\Vaquinha.Service\Vaquinha.Service.csproj", "{EE661B07-85A9-4146-BA12-023F8D1773C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8628E58F-E6A0-4FD8-BEDE-7D4DEE561BDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaquinha.Tests.Common", "tests\Vaquinha.Tests.Common\Vaquinha.Tests.Common.csproj", "{7F2761D6-0679-4709-8769-23EBA7788DB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaquinha.Unit.Tests", "tests\Vaquinha.Unit.Tests\Vaquinha.Unit.Tests.csproj", "{6E321C26-6D37-4E19-8AE9-873FBFEED965}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,14 @@ Global
 		{EE661B07-85A9-4146-BA12-023F8D1773C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE661B07-85A9-4146-BA12-023F8D1773C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE661B07-85A9-4146-BA12-023F8D1773C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F2761D6-0679-4709-8769-23EBA7788DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F2761D6-0679-4709-8769-23EBA7788DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F2761D6-0679-4709-8769-23EBA7788DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F2761D6-0679-4709-8769-23EBA7788DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E321C26-6D37-4E19-8AE9-873FBFEED965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E321C26-6D37-4E19-8AE9-873FBFEED965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E321C26-6D37-4E19-8AE9-873FBFEED965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E321C26-6D37-4E19-8AE9-873FBFEED965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +58,8 @@ Global
 		{9F443E0E-3F81-4D0C-879C-5E36BDDD57F1} = {E2A7C285-C346-4C25-A60E-9336FA1C7885}
 		{C1395287-01C6-4A26-9086-D5D3998C790F} = {E2A7C285-C346-4C25-A60E-9336FA1C7885}
 		{EE661B07-85A9-4146-BA12-023F8D1773C9} = {E2A7C285-C346-4C25-A60E-9336FA1C7885}
+		{7F2761D6-0679-4709-8769-23EBA7788DB0} = {8628E58F-E6A0-4FD8-BEDE-7D4DEE561BDE}
+		{6E321C26-6D37-4E19-8AE9-873FBFEED965} = {8628E58F-E6A0-4FD8-BEDE-7D4DEE561BDE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE9F874A-5218-415C-BF41-A32645CCC528}
